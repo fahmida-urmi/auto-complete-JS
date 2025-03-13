@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoComplete JS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
+    <div class="text-center mb-6">
+      <h2 class="text-2xl font-semibold text-gray-700">AutoComplete JS</h2>
+      <p class="text-gray-500">Start typing a fruit name to see suggestions.</p>
+    </div>
+
+    <!-- Input for AutoComplete -->
+    <div class="mb-6 relative">
+      <label for="autocompleteInput" class="block text-sm font-medium text-gray-700">Search Fruit</label>
+      <input type="text" id="autocompleteInput" class="mt-2 p-2 w-full border border-gray-300 rounded-md" placeholder="Type a fruit name" autocomplete="off">
+      
+      <!-- Suggestions box -->
+      <div id="suggestionBox" class="absolute left-0 w-full bg-white border border-gray-300 rounded-md mt-1 max-h-60 overflow-y-auto hidden shadow-lg z-10"></div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
